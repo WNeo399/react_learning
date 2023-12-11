@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+main {
+  @apply p-6 flex flex-col items-center justify-center min-h-screen w-full;
+}
+
+.demo,
+.markdown {
+  flex-grow: 1;
+  height: 0;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.demo {
+  border-bottom: 1px solid #ccc;
+}
