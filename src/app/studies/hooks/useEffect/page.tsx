@@ -11,6 +11,7 @@ export default function UseEffect() {
     <>
       <div className="text-xl">Count: {count}</div>
       <button
+        className="mr-2"
         onClick={() => {
           setCount(count + 1);
         }}

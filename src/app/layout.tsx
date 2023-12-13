@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
-import Link from "../../node_modules/next/link";
+import NavBar from "./components/NavBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,19 +20,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div className="flex min-h-screen max-w-7xl m-auto">
-          <nav className="border-r-2 px-4 py-8 flex flex-col gap-2 items-start whitespace-nowrap">
-            <Link href="/">Home</Link>
-            <h3>Basic</h3>
-            <Link href="/studies/basic/layout">Layout</Link>
-            <Link href="/studies/basic/fetch">Fetch</Link>
-            <h3>React Hooks</h3>
-            <Link href="/studies/hooks/useState">UseState</Link>
-            <Link href="/studies/hooks/useEffect">UseEffect</Link>
-          </nav>
-          {/* <main>
-            <div className="demo"> {children}</div>
-            <div className="markdown"></div>
-          </main> */}
+          <NavBar></NavBar>
+
           {children}
         </div>
       </body>
