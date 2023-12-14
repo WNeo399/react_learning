@@ -12,6 +12,8 @@ export default function NavBar() {
       <h3>React Hooks</h3>
       <Link href="/studies/hooks/useState">UseState</Link>
       <Link href="/studies/hooks/useEffect">UseEffect</Link>
+      <h3>TypeScript in React</h3>
+      <Link href="/studies/typescript/componentProps">Component Props</Link>
       <h3>Demo Projects</h3>
       <Link href="/demoProjects/reactRouterApp">React Router App</Link>
     </nav>
