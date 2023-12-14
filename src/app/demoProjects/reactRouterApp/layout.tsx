@@ -20,7 +20,7 @@ export default function layout({ children }: { children: React.ReactNode }) {
   ];
   const pathName = usePathname();
   return (
-    <main className="w-full">
+    <main className="w-full max-w-3xl m-auto">
       <div className="min-h-screen flex flex-col justify-center items-center">
         {/* <NavLink activeClassName="aaa" href="/"></NavLink> */}
         <ul className="flex bg-slate-200 rounded px-8 py-4 text-lg w-full gap-8">
