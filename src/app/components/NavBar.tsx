@@ -14,6 +14,7 @@ export default function NavBar() {
       <Link href="/studies/hooks/useEffect">UseEffect</Link>
       <h3>TypeScript in React</h3>
       <Link href="/studies/typescript/componentProps">Component Props</Link>
+      <Link href="/studies/typescript/typeHooks">Type Hooks</Link>
       <h3>Demo Projects</h3>
       <Link href="/demoProjects/reactRouterApp">React Router App</Link>
     </nav>

@@ -2,7 +2,7 @@
 import Button from "./component/button";
 
 export default function ComponentProps() {
-  const onClick = (test: string) => {
+  const handleClick = (test: string) => {
     return 5;
   };
   return (
@@ -14,7 +14,11 @@ export default function ComponentProps() {
           fontSize: 30,
           padding: "10px 20px 10px 20px",
         }}
-        onClick={onClick}
+        handleClick={handleClick}
+        type="submit"
+        autoFocus={true}
+        defaultValue="tesx"
+        className="btn"
       >
         <div>Click Me</div>
       </Button>
