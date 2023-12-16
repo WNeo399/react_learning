@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 export default function TypeHooks() {
   const [count, setCount] = useState<number>(0);
   const [text, setText] = useState("Hello World!");
@@ -15,6 +15,8 @@ export default function TypeHooks() {
     getUser();
   }, []);
 
+  const ref = useRef<HTMLButtonElement>(null)
+
   return (
     <div className="p-10">
       <h1 className="text-4xl mb-6 font-bold;">TypeHooks</h1>
@@ -26,6 +28,8 @@ export default function TypeHooks() {
           <div>Age: {user?.email}</div>
         </div>
       )}
+
+      <button ref={ref}>Click Me!</button>
     </div>
   );
 }
