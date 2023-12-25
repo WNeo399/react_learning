@@ -11,3 +11,13 @@ body {
   background: var(--background-dark);
   color: var(--color-dark);
 }
+
+.dynamic-underline {
+  @apply inline bg-gradient-to-r from-white to-white bg-right-bottom hover:bg-left-bottom bg-no-repeat;
+  background-size: 0px 2px;
+  transition: background-size 0.2s ease-in;
+}
+
+.dynamic-underline:hover {
+  background-size: 100% 2px;
+}
