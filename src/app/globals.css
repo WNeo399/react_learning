@@ -13,7 +13,7 @@ body {
 }
 
 .dynamic-underline {
-  @apply inline bg-gradient-to-r from-white to-white bg-right-bottom hover:bg-left-bottom bg-no-repeat;
+  @apply inline px-4 pb-1 bg-gradient-to-r from-white to-white bg-right-bottom hover:bg-left-bottom bg-no-repeat;
   background-size: 0px 2px;
   transition: background-size 0.2s ease-in;
 }
