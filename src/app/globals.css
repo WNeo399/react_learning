@@ -12,6 +12,13 @@ body {
   color: var(--color-dark);
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+input {
+  color: unset;
+}
+
 .dynamic-underline {
   @apply inline px-4 pb-1 bg-gradient-to-r from-white to-white bg-right-bottom hover:bg-left-bottom bg-no-repeat;
   background-size: 0px 2px;

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 main {
-  @apply p-6 flex flex-col items-center justify-center min-h-screen w-full;
+  @apply p-6 flex flex-col items-center justify-center min-h-screen w-full border-r border-white;
 }
 
 .demo,
